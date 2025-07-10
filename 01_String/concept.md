@@ -15,7 +15,7 @@ s.charAt(i); // i번째 문자 (0부터)
 s.substring(start, end); // end는 포함 안함
 ```
 
-### 🔗 문자열 결합
+### 문자열 결합
 ```java
 // 1. StringBuilder
 StringBuilder sb = new StringBuilder();
@@ -89,4 +89,10 @@ list.set(0, "hi");              // 값 수정
 | Array | 고정 크기, 기본형 사용 가능 |
 | ArrayList | 동적 크기, 참조형만 가능 |
 
-> **이 문서는 Java로 코딩 테스트를 준비하며 정리한 개념 정리입니다.**  
+
+### 내가 코테 풀면서 한 실수 모음.. (실수 주의!)
+- `substring(start, end)`에서 end는 포함 안 됨!
+- `ArrayList<int>` 안됨!! → `ArrayList<Integer>`로 써야 함
+- int[] arr = new int[5];          // 크기 꼭 지정해야 함
+- 문자열 결합은 StringBuilder가 가장 효율적이므로 고민하지 말기!
+- equals()로 문자열 비교해야지 == 쓰면 안됨!!
