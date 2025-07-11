@@ -20,7 +20,7 @@
 | setCharAt(int index, char ch) | 지정한 인덱스의 문자를 교체 |
 | substring(int start) | start부터 끝까지 문자열 추출 |
 | substring(int start, int end) | start부터 end-1까지 문자열 추출 |
-| toString()` | StringBuilder를 String으로 변환 |
+| toString() | StringBuilder를 String으로 변환 |
 
 <br>
 
