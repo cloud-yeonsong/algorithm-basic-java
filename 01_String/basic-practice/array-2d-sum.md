@@ -14,8 +14,10 @@ public int sum2D(int[][] arr) {
     return total;
 }
 ```
-<br>
+
 > 👩🏻‍💻 실수 주의! <br>
+> int[]는 1차원 배열(한 행)을 의미하므로 row는 한 행을 의미한다.
+
 ```java
 int[][] arr = {
     {1, 2},
@@ -26,11 +28,15 @@ for (int[] row : arr) {
     System.out.println(Arrays.toString(row));
 }
 ```
+
 ``` java
 출력:
 [1, 2]
 [3, 4]
 ```
+
+<br>
+
 # Java 풀이(2)
 ```java
 public int sum2D(int[][] arr) {
