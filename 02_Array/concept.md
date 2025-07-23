@@ -84,17 +84,14 @@ list.set(0, "hi");              // 값 수정
 
 ## 요약 및 비교
 
-| 항목 | 설명 |
-|------|------|
-| Array | 고정 크기, 기본형 사용 가능 |
-| ArrayList | 동적 크기, 참조형만 가능 |
-
-| 항목 | 설명 |
-|------|------|
-| arr.length | 배열의 길이 (변수) |
-| list.size() | ArrayList의 길이 (메서드) |
+| 항목    | Array        | ArrayList              |
+| ----- | ------------ | ---------------------- |
+| 크기    | 고정           | 자동 확장                  |
+| 자료형   | 기본형 사용 가능    | 참조형만 사용 가능 |
+| 길이 확인 | arr.length | list.size()          |
+| 요소 접근 | arr[0]     | list.get(0)          |
 
 ### 내가 코테 풀면서 한 실수 모음.. (실수 주의!)
-- `substring(start, end)`에서 end는 포함 안 됨!
+- arr.length() 안됨! → arr.length (괄호 없어야해!!)
 - `ArrayList<int>` 안됨!! → `ArrayList<Integer>`로 써야 함
 - int[] arr = new int[5];          // 크기 꼭 지정해야 함
