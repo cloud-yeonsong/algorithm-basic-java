@@ -65,4 +65,27 @@ int[] dest = new int[5];
 System.arraycopy(origin, 0, dest, 1, 3); // dest = [0, 1, 2, 3, 0]
 
 ```
-> Arrays.copyOf()는 코드 간결(간단하게 전체 복사), System.arraycopy()는 성능이 빠름(정교하게 부분 복사)!
+> Arrays.copyOf()는 코드 간결(간단하게 전체 복사)<br>
+> System.arraycopy()는 성능이 빠름(정교하게 부분 복사)!
+
+## 3. 배열/리스트 변환
+
+### 배열 -> 리스트
+```java
+String[] arr = {"a", "b"};
+List<String> list = Arrays.asList(arr); // 고정 크기 리스트
+List<String> list = new ArrayList<>(Arrays.asList(arr)); // 크기 변경 가능한 리스트
+```
+
+### 리스트 -> 배열
+```java
+List<String> list = List.of("a", "b");
+String[] arr = list.toArray(new String[0]); // new String[0]은 타입만 알려주고, 실제 크기는 자동 조절됨
+```
+
+
+
+
+
+
+
