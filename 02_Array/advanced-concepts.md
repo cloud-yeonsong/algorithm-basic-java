@@ -73,8 +73,12 @@ System.arraycopy(origin, 0, dest, 1, 3); // dest = [0, 1, 2, 3, 0]
 ### 배열 -> 리스트
 ```java
 String[] arr = {"a", "b"};
-List<String> list = Arrays.asList(arr); // 고정 크기 리스트
-List<String> list = new ArrayList<>(Arrays.asList(arr)); // 크기 변경 가능한 리스트
+
+// 1. 고정 크기 리스트 (그냥 배열을 리스트처럼 사용할 수 있게 래핑 해주는 메서드)
+List<String> list = Arrays.asList(arr);
+
+// 2. 크기 변경 가능한 리스트 (복사해서 새 리스트 만들기!)
+List<String> list = new ArrayList<>(Arrays.asList(arr));
 ```
 
 ### 리스트 -> 배열
@@ -83,6 +87,7 @@ List<String> list = List.of("a", "b");
 String[] arr = list.toArray(new String[0]); // new String[0]은 타입만 알려주고, 실제 크기는 자동 조절됨
 ```
 
+<br>
 
 
 
