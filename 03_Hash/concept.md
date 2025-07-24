@@ -139,9 +139,9 @@ for (String s : set) {
 <br>
 
 > 👩🏻‍💻 실수주의!<br>
-> HashMap이나 HashSet은 순서를 보장하지 않음<br>
-> map.get("없는키")는 null 반환 → NullPointerException 조심<br>
-> map.get(key)은 해당 key에 대한 value를 반환!! 키 말고 값!!!
+> - HashMap이나 HashSet은 순서를 보장하지 않음<br>
+> - map.get("없는키")는 null 반환 → NullPointerException 조심<br>
+> - map.get(key)은 해당 key에 대한 value를 반환!! 키 말고 값!!!
 ```java
 Map<String, Integer> map = new HashMap<>();
 map.put("apple", 3);
@@ -153,8 +153,8 @@ System.out.println(map.get("banana"));  // 출력: null
 <br>
 
 > 👩🏻‍💻 <br>
-> keySet()은 key만 순회, entrySet()은 (key, value) 둘 다 사용 가능<br>
-> HashSet은 내부적으로 HashMap<K, Object> 기반으로 동작함<br>
-
+> - keySet()은 key만 순회, entrySet()은 (key, value) 둘 다 사용 가능<br>
+> - HashSet은 내부적으로 HashMap<K, Object> 기반으로 동작함<br>
+> - map.put(1, 100); // 실제로는 map.put(Integer.valueOf(1), Integer.valueOf(100));<br>
 
 
