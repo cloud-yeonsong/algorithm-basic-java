@@ -9,6 +9,7 @@ int[] nums = {1, 2, 2, 3, 1, 4};
 ```java
 [1, 2, 3, 4]
 ```
+<br>
 
 # Java 풀이(1)
 ```java
@@ -21,7 +22,6 @@ public void printUnique(int[] nums) {
 }
 ```
 
-<br>
 
 # Java 풀이(2)
 ```java
