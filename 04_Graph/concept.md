@@ -77,7 +77,7 @@ void bfs(int start, boolean[] visited, List<List<Integer>> graph) {
         for (int next : graph.get(node)) { // 현재 노드(큐에서 꺼낸 노드, 방문한 노드)의 이웃 노드들 다 확인
             if (!visited[next]) { // 아직 방문하지 않은 노드라면
                 visited[next] = true; // 방문처리
-                q.offer(next); // 큐에 넣어주기 (나중에 방문 할 수 있게
+                q.offer(next); // 큐에 넣어주기 (나중에 방문 할 수 있게)
             }
         }
     }
@@ -91,7 +91,7 @@ void bfs(int start, boolean[] visited, List<List<Integer>> graph) {
 
 ## 정리
 
-### 아주 쉬운 연습문제!!
+### 쉬운 연습문제!!
 문제: <br>
 0번부터 3번까지 연결된 정점이 있는 그래프가 있습니다.<br>
 DFS와 BFS 순서를 출력하세요.<br>
@@ -215,4 +215,5 @@ public class Main {
 
 ### 마지막으로...
 > 열심히 해봤는데... 아직도 문제를 보면 눈앞이 캄캄해요.. ㅜㅜ<br>
-> 더 노력하면 언젠가는 그래프의 달인이 될 수 있겠죠!.. 파이팅!!! 다음은 문제들고 찾아오겠습니다..!
+> 더 노력하면 언젠가는 그래프의 달인이 될 수 있겠죠!.. 파이팅!!!<br>
+> 다음은 문제들고 찾아오겠습니다..!
