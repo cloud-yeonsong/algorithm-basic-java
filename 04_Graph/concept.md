@@ -87,8 +87,6 @@ void bfs(int start, boolean[] visited, List<List<Integer>> graph) {
 > 2. visited 배열은 중복 방문 방지용<br>
 <br>
 
----
-
 ## 정리
 
 ### 쉬운 연습문제!!
